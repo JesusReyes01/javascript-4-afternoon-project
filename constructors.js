@@ -118,12 +118,14 @@ function Car(make, model, year){
   // Code here
   User.prototype.removeSavedPost = function(postId){
 
+ //Also correct
     this.savedPosts.forEach((el,i) => {
       if (el.id === postId){
         this.savedPosts.splice(i,1)
       }
     })
     return this.savedPosts
+  
     //correct
     // for(i=0;i<this.savedPosts.length; i++){
     //   if(this.savedPosts[i].id === postId){
@@ -131,8 +133,8 @@ function Car(make, model, year){
     //   }
     // }
     // return this.savedPosts
-
   }
+  
   ////////// PROBLEM 7 //////////
   
   // You will continue to use the constructor function you created in problem 5.
